@@ -6,6 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  <NoWarn>$(NoWarn);1591</NoWarn>
+
   <ItemGroup>
     <Compile Remove="Hickory.Api.Tests/**" />
     <Compile Remove="Hickory.Api.IntegrationTests/**" />
@@ -39,3 +42,4 @@
   </ItemGroup>
 
 </Project>
+
