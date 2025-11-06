@@ -2,6 +2,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Hickory.Api.Controllers;
 
+/// <summary>
+/// Provides weather forecast data.
+/// </summary>
+
+
 [ApiController]
 [Route("[controller]")]
 public class WeatherForecastController : ControllerBase
@@ -18,6 +23,7 @@ public class WeatherForecastController : ControllerBase
         _logger = logger;
     }
 
+    
     [HttpGet(Name = "GetWeatherForecast")]
     public IEnumerable<WeatherForecast> Get()
     {
@@ -29,4 +35,17 @@ public class WeatherForecastController : ControllerBase
         })
         .ToArray();
     }
+    
+    /// <summary>
+    /// **Gets a random five-day weather forecast.**
+    /// </summary>
+    
+    /// <remarks>
+    /// This endpoint returns simulated weather data for the next five days, 
+    /// </remarks>
+    
+    /// <returns>
+    /// **A list of WeatherForecast objects** containing temperature and summary data.
+    /// </returns>
 }
+
