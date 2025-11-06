@@ -6,9 +6,6 @@
     <Nullable>enable</Nullable>
     <IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
-
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>  <!-- Code for addind API docs -->
-    <NoWarn>$(NoWarn);1591</NoWarn>
   
   </PropertyGroup>
 
